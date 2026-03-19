@@ -1,0 +1,135 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    color: #222;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Menu */
+nav {
+    background-color: #2e75b6;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 12px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+}
+
+/* Títulos */
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #d9e2f3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #c55a11;
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Artigos */
+article {
+    background-color: #f8fbff;
+    padding: 12px;
+    border-left: 4px solid #2e75b6;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Imagem */
+figure {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Aside */
+aside {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    background-color: #fff4cc;
+    padding: 15px;
+    border-left: 5px solid #d6b656;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    color: #1f4e79;
+}
