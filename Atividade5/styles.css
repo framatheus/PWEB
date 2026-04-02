@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    background-color: gray;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.texto {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .caixa {
+        background-color: gray;
+    }
+    .cor-420 {
+        display: inline;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: orange;
+    }
+    .cor-768 {
+        display: inline;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: hotpink;
+    }
+    .cor-1024 {
+        display: inline;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: red;
+    }
+    .cor-1080 {
+        display: inline;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: blueviolet;
+    }
+    .cor-1366 {
+        display: inline;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: gold;
+    }
+    .cor-1920 {
+        display: inline;
+    }
+}
+
+@media (min-width: 1921px) {
+    .caixa {
+        background-color: green;
+    }
+    .cor-maior {
+        display: inline;
+    }
+}
