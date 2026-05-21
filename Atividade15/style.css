@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f9ec9, #00d4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 720px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+    color: #087fa3;
+    font-size: 32px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #00bfe8, transparent);
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d9d9d9;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00bfe8;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 191, 232, 0.4);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.pesquisa {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eefbff;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #bdefff;
+}
+
+.pesquisa p:first-child {
+    color: #087fa3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pergunta {
+    color: #333;
+    margin: 12px 0;
+}
+
+.pesquisa input[type="radio"] {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.pesquisa label {
+    display: inline;
+    font-weight: normal;
+    color: #333;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.botoes input {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes input[type="submit"] {
+    background-color: #00a8cc;
+    color: white;
+}
+
+.botoes input[type="submit"]:hover {
+    background-color: #087fa3;
+    transform: translateY(-2px);
+}
+
+.botoes input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.botoes input[type="reset"]:hover {
+    background-color: #c7c7c7;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botoes input {
+        width: 100%;
+    }
+}
