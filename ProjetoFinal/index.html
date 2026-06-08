@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento de Estudos - KANBAN</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="board">
+    <a class="skip-link" href="#conteudo-principal"> Pular para o conteúdo principal</a>
+    <header class="app-header">
+        <div>
+            <p class="eyebrow">Projeto Final</p>
+            <h1>Planejamento de Estudos</h1>
+            <p id="summary" class="headersummary">Carregando Conteúdos</p>
+        </div>
+        <a class="btn btn-primary" href="cadastro.html" aria-label="Cadastrar novo conteúdo de estudo.">Novo Conteúdo</a>
+    </header>
+
+    <main id="conteudo-principal" class="container">
+        <section class="toolbar" aria-label="Filtros do quadro">
+            <div class="field field-search">
+                <label for="buscaTitulo">Buscar por título, responsável ou prioridade</label>
+                <input
+                id="buscaTitulo"
+                type="search"
+                placeholder="Buscar por título, repsonsável ou prioridade"
+                autocomplete="off"/>
+            </div>
+            <div class="field">
+                <label for="prioridadeFiltro">Prioridade</label>
+                <select id="prioridadeFiltro">
+                    <option value="">TODAS</option>
+                    <option value="Alta">ALTA</option>
+                    <option value="Média">MÉDIA</option>
+                    <option value="Baixa">BAIXA</option>
+                </select>
+            </div>
+
+            <button id="limparFiltros" class="btn btn-secundary" type="button">Limpar</button>
+        </section>
+
+        <section class="legend" aria-label="Legenda de Avisos">
+            <span><strong class="dot dot-overdure"></strong>Atrasado</span>
+            <span><strong class="dot dot-soon"></strong>Prazo Próximo</span>
+            <span><strong class="dot dot-done"></strong>Concluído</span>
+        </section>
+
+        <section class="board" aria-label="Quadro Kanban de conteúdos de estudo">
+      <article class="column" data-status="Conteúdo para estudar">
+        <header class="column-header">
+          <h2>Conteúdo para estudar</h2>
+          <span class="counter" id="count-Conteúdo-para-estudar">0</span>
+        </header>
+        <div class="cards" id="list-Conteúdo-para-estudar" aria-label="Itens da coluna Conteúdo para estudar"></div>
+      </article>
+
+      <article class="column" data-status="Em Progresso">
+        <header class="column-header">
+          <h2>Em progresso</h2>
+          <span class="counter" id="count-Em-Progresso">0</span>
+        </header>
+        <div class="cards" id="list-Em-Progresso" aria-label="Itens da coluna Em progresso"></div>
+      </article>
+
+      <article class="column" data-status="Concluído">
+        <header class="column-header">
+          <h2>Concluído</h2>
+          <span class="counter" id="count-Concluído">0</span>
+        </header>
+        <div class="cards" id="list-Concluído" aria-label="Itens da coluna Concluído"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
